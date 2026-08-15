@@ -1,4 +1,303 @@
 { "commands": [
-
+{ "hdr": "714", "rax": "77E", "fcm1": true, "cmd": {"22": "1014"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_AAT", "path": "Climate", "fmt": { "len": 8, "max": 77.5, "min": -50, "div": 2, "add": -50, "unit": "celsius" }, "name": "AAT"}
+  ]},
+{ "hdr": "714", "rax": "77E", "fcm1": true, "cmd": {"22": "2206"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_FUEL_LVL", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Fuel LVL"}
+  ]},
+{ "hdr": "714", "rax": "77E", "fcm1": true, "cmd": {"22": "2299"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_DASH_AVG_FUEL_CONS", "path": "Fuel", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "AVG Fuel Cons"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "cmd": {"22": "2603"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_CLIMATE_A_C_COMP_SPD", "path": "Climate", "fmt": { "len": 8, "max": 25500, "mul": 100, "unit": "rpm" }, "name": "A C Comp SPD"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "cmd": {"22": "2604"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_CLIMATE_A_C_COMP_LOAD", "path": "Climate", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "percent" }, "name": "A C Comp Load"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "cmd": {"22": "2605"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_CLIMATE_REFRIG_P", "path": "Climate", "fmt": { "len": 8, "max": 51, "div": 5, "unit": "kilopascal" }, "name": "Refrig P"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "cmd": {"22": "2606"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_CLIMATE_RAD_FAN_ACT_DUTY", "path": "Climate", "fmt": { "len": 8, "max": 102, "mul": 2, "div": 5, "unit": "percent" }, "name": "RAD FAN ACT Duty"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "cmd": {"22": "2607"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_CLIMATE_RAD_FAN_CMD_DUTY", "path": "Climate", "fmt": { "len": 8, "max": 102, "mul": 2, "div": 5, "unit": "percent" }, "name": "RAD FAN CMD Duty"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "cmd": {"22": "2609"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_AAT_V2", "path": "Climate", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "celsius" }, "name": "AAT V2"}
+  ]},
+{ "hdr": "746", "rax": "7B0", "fcm1": true, "cmd": {"22": "260A"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_AAT_CABIN", "path": "Climate", "fmt": { "len": 8, "max": 77.5, "min": -50, "div": 2, "add": -50, "unit": "celsius" }, "name": "AAT Cabin"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"01": "04"}, "freq": 5,
+  "signals": [
+    {"id": "LOAD_PCT", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Calculated engine load"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"01": "05"}, "freq": 5,
+  "signals": [
+    {"id": "ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"01": "0D"}, "freq": 5,
+  "signals": [
+    {"id": "VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"01": "10"}, "freq": 5,
+  "signals": [
+    {"id": "MAF", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "gramsPerSecond" }, "name": "Mass air flow rate"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"01": "11"}, "freq": 5,
+  "signals": [
+    {"id": "TP", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Throttle position"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1007"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_CAMS_START", "path": "Engine", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "milliseconds" }, "name": "Cams Start"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "03", "cmd": {"22": "100C"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_FUEL_LVL_2", "path": "Fuel", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "percent" }, "name": "Fuel LVL 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "100D"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "unknown" }, "name": "Gear"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1024"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_MQB_AIR_MASS_1", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "MQB AIR Mass 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1026"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_MQB_MAF_1_B1_RAW", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "MQB MAF 1 B1 RAW"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "102E"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_ACCEL_PED_2", "path": "Movement", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "metersPerSecondSquared" }, "name": "Accel PED 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "103C"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_MQB_INT_MAN_P", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "MQB INT MAN P"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "03", "cmd": {"22": "1044"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_DPF_SFC_T", "path": "Engine", "fmt": { "len": 16, "max": 6280.4, "min": -273.1, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "DPF SFC T"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1047"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_ENG_TRQ", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "ENG TRQ"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1057"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_CHG_P", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "kilopascal" }, "name": "CHG P"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "03", "cmd": {"22": "105C"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_GEN_LOAD", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "percent" }, "name": "GEN Load"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1069"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_ENG_START_QTY", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "milliseconds" }, "name": "ENG Start QTY"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "106B"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_LIM_TRQ", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "LIM TRQ"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10E2"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_WEAR_IDX", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "unknown" }, "name": "Wear IDX"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10F9"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_DPF_OUT_T", "path": "Engine", "fmt": { "len": 16, "max": 6280.4, "min": -273.1, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "DPF OUT T"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10FB"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_EXH_GAS_T_1", "path": "Engine", "fmt": { "len": 16, "max": 6280.4, "min": -273.1, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "EXH GAS T 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10FF"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_INJ_DEV_CYL_1", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "unknown" }, "name": "INJ DEV CYL 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1100"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_INJ_DEV_CYL_3", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "unknown" }, "name": "INJ DEV CYL 3"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1104"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_INJ_DEV_CYL_4", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "unknown" }, "name": "INJ DEV CYL 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1105"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_INJ_DEV_CYL_2", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "unknown" }, "name": "INJ DEV CYL 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1116"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_COOL_FAN_1_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "percent" }, "name": "Cool FAN 1 Duty"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "111A"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_FUEL_FLOW", "path": "Fuel", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "unknown" }, "name": "Fuel Flow"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1139"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_MEAN_INJ_QUANTITY", "path": "Fuel", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "unknown" }, "name": "Mean INJ Quantity"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "03", "cmd": {"22": "113D"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_O2_SEN_1_LAMBDA", "path": "Emissions", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "unknown" }, "name": "O2 SEN 1 Lambda"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "113F"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_FUEL_CONS", "path": "Fuel", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "unknown" }, "name": "Fuel Cons"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1146"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_MISFIRES_TOTAL", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "unknown" }, "name": "Misfires Total"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1147"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_MISFIRES_1000REV_C1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "unknown" }, "name": "Misfires 1000rev C1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "03", "cmd": {"22": "114E"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_SOOT_MASS_MEAS", "path": "Emissions", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "unknown" }, "name": "Soot Mass Meas"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1156"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_DIST_LAST_REGEN", "path": "Emissions", "fmt": { "len": 32, "max": 4294967.2949999999, "div": 1000, "unit": "kilometers" }, "name": "Dist Last Regen"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "115A"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_DPF_FUEL_CON_REGEN", "path": "Fuel", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "unknown" }, "name": "DPF Fuel CON Regen"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1169"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_FUEL_P_HIGH", "path": "Fuel", "fmt": { "len": 16, "max": 6553500, "mul": 100, "unit": "kilopascal" }, "name": "Fuel P High"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "116A"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_FUEL_P_HIGH_CMD", "path": "Fuel", "fmt": { "len": 16, "max": 6553500, "mul": 100, "unit": "kilopascal" }, "name": "Fuel P High CMD"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "117E"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_TURB_ACT_1_B1", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "unknown" }, "name": "Turb ACT 1 B1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1187"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_ACCEL", "path": "Movement", "fmt": { "len": 16, "max": 32.767, "min": -32.768, "div": 1000, "sign": true, "unit": "metersPerSecondSquared" }, "name": "Accel"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11B2"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_DPF_IN_T", "path": "Engine", "fmt": { "len": 16, "max": 6280.4, "min": -273.1, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "DPF IN T"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11BC"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_OIL_LVL", "path": "Fluids", "fmt": { "len": 16, "max": 262.14, "div": 250, "unit": "percent" }, "name": "OIL LVL"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11BF"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_FUEL_P_REG", "path": "Fuel", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "kilopascal" }, "name": "Fuel P REG"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11CC"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_BOOST_REG_FDBK", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "unknown" }, "name": "Boost REG Fdbk"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11E6"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_MQB_DPF_EXH_VOL", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "MQB DPF EXH VOL"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11F2"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_MAIN_INJ_START", "path": "Fuel", "fmt": { "len": 16, "max": 655.34, "min": -655.36, "div": 50, "sign": true, "unit": "milliseconds" }, "name": "Main INJ Start"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11F4"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_POST_INJ_1_START", "path": "Fuel", "fmt": { "len": 16, "max": 655.34, "min": -655.36, "div": 50, "sign": true, "unit": "milliseconds" }, "name": "Post INJ 1 Start"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "121E"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_SPEC_VALUE_RAIL_P", "path": "Engine", "fmt": { "len": 16, "max": 6553500, "mul": 100, "unit": "kilopascal" }, "name": "Spec Value Rail P"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "121F"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_HIGH_FUEL_P_CONTROL_DEVIATION", "path": "Fuel", "fmt": { "len": 16, "max": 3276700, "min": -3276800, "mul": 100, "sign": true, "unit": "kilopascal" }, "name": "High Fuel P Control Deviation"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1221"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_ACCEL_PED_1", "path": "Movement", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "metersPerSecondSquared" }, "name": "Accel PED 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "12FC"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_THROT_VALVE_ADAPT", "path": "Engine", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "unknown" }, "name": "Throt Valve Adapt"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "12FE"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_CAMS_ADAPT_PHASE_1", "path": "Engine", "fmt": { "len": 16, "max": 655.34, "min": -655.36, "div": 50, "sign": true, "unit": "unknown" }, "name": "Cams Adapt Phase 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1301"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_LIM_SMOKE", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "LIM Smoke"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "133B"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_CAMS_SPD", "path": "Movement", "fmt": { "len": 16, "max": 19660.5, "mul": 3, "div": 10, "unit": "rpm" }, "name": "Cams SPD"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14C7"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_PRE_INJ_1_START", "path": "Fuel", "fmt": { "len": 16, "max": 1310.7, "div": 50, "unit": "milliseconds" }, "name": "PRE INJ 1 Start"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14C8"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_PRE_INJ_2_START", "path": "Fuel", "fmt": { "len": 16, "max": 1310.7, "div": 50, "unit": "milliseconds" }, "name": "PRE INJ 2 Start"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14CE"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_POST_INJ_3_ACTIVATION_DURATION", "path": "Fuel", "fmt": { "len": 16, "max": 26.214, "div": 2500, "unit": "milliseconds" }, "name": "Post INJ 3 Activation Duration"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14CF"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_MAIN_INJ_DURATION", "path": "Fuel", "fmt": { "len": 16, "max": 26.214, "div": 2500, "unit": "milliseconds" }, "name": "Main INJ Duration"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14D0"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_PRE_INJ_1_DURATION", "path": "Fuel", "fmt": { "len": 16, "max": 26.214, "div": 2500, "unit": "milliseconds" }, "name": "PRE INJ 1 Duration"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14D1"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_PRE_INJ_2_DURATION", "path": "Fuel", "fmt": { "len": 16, "max": 26.214, "div": 2500, "unit": "milliseconds" }, "name": "PRE INJ 2 Duration"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "03", "cmd": {"22": "15B8"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_MQB_DPF_DIFF_P_DYNAMIC_OFFSET", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "MQB DPF Diff P Dynamic Offset"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "03", "cmd": {"22": "1628"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_PQ35_INTERCOOLER_AIR_OUTPUT_T", "path": "Engine", "fmt": { "len": 16, "max": 6280.4, "min": -273.1, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "Intercooler AIR Output T"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1798"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_MQB_CHARGE_AIR_T_TUBROCHARGER_OUTLET_CALCULATED", "path": "Engine", "fmt": { "len": 16, "max": 6280.4, "min": -273.1, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "MQB Charge AIR T Tubrocharger Outlet Calculated"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F41F"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_RUNTM", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "unknown" }, "name": "Runtm"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F431"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_CLR_DIST", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "CLR Dist"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F442"}, "freq": 5,
+  "signals": [
+    {"id": "VOLKSWAGEN_VPWR", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "unknown" }, "name": "Vpwr"}
+  ]}
 ]
 }
